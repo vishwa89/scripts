@@ -1,4 +1,4 @@
-<script>
+
     $(document).ready(function() {
   
         var flag =true,
@@ -489,4 +489,4 @@
     });
     
     
-</script>
+
