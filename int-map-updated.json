@@ -1,0 +1,192 @@
+{
+    "Arab States": {
+        "name": "Arab States",
+        "id": 0,
+        "data": "state"
+    },
+    "Central Asia": {
+        "name": "Central Asia",
+        "id": 1,
+        "data": "state"
+    },
+    "Central & Eastern Europe": {
+        "name": "Central & Eastern Europe",
+        "id": 2,
+        "data": "state"
+    },
+    "East Asia and Pacific": {
+        "name": "East Asia and Pacific",
+        "id": 3,
+        "data": "state"
+    },
+    "Latin America": {
+        "name": "Latin America",
+        "id": 4,
+        "data": "state"
+    },
+    "North America": {
+        "name": "North America",
+        "id": 5,
+        "data": "state"
+    },
+    "South & West Asia": {
+        "name": "South & West Asia",
+        "id": 6,
+        "data": "state"
+    },
+    "Sub Saharan Africa": {
+        "name": "Sub Saharan Africa",
+        "id": 7,
+        "data": "state"
+    },
+    "USA": {
+        "name": "USA",
+        "id": 8,
+        "data": "company"
+    },
+    "UK": {
+        "name": "UK",
+        "id": 9,
+        "data": "company"
+    },
+    "Australia": {
+        "name": "Australia",
+        "id": 10,
+        "data": "company"
+    },
+    "France": {
+        "name": "France",
+        "id": 11,
+        "data": "company"
+    },
+    "Germany": {
+        "name": "Germany",
+        "id": 12,
+        "data": "company"
+    },
+    "Russia": {
+        "name": "Russia",
+        "id": 13,
+        "data": "company"
+    },
+    "Canada": {
+        "name": "Canada",
+        "id": 14,
+        "data": "company"
+    },
+    "Malaysia": {
+        "name": "Malaysia",
+        "id": 15,
+        "data": "company"
+    },
+    "Italy": {
+        "name": "Italy",
+        "id": 16,
+        "data": "company"
+    },
+    "Argentina": {
+        "name": "Argentina",
+        "id": 17,
+        "data": "company"
+    },
+    "Saudi Arabia": {
+        "name": "Saudi Arabia",
+        "id": 18,
+        "data": "company"
+    },
+    "Netherlands": {
+        "name": "Netherlands",
+        "id": 19,
+        "data": "company"
+    },
+    "Austria": {
+        "name": "Austria",
+        "id": 20,
+        "data": "company"
+    },
+    "Republic of Korea": {
+        "name": "Republic of Korea",
+        "id": 21,
+        "data": "company"
+    },
+    "Turkey": {
+        "name": "Turkey",
+        "id": 22,
+        "data": "company"
+    },
+    "Spain": {
+        "name": "Spain",
+        "id": 23,
+        "data": "company"
+    },
+    "UAE": {
+        "name": "UAE",
+        "id": 24,
+        "data": "company"
+    },
+    "Poland": {
+        "name": "Poland",
+        "id": 25,
+        "data": "company"
+    },
+    "New Zealand": {
+        "name": "New Zealand",
+        "id": 26,
+        "data": "company"
+    },
+    "Switzerland": {
+        "name": "Switzerland",
+        "id": 27,
+        "data": "company"
+    },
+    "Ukraine": {
+        "name": "Ukraine",
+        "id": 28,
+        "data": "company"
+    },
+    "India": {
+        "name": "India",
+        "id": 29,
+        "data": "company"
+    },
+    "Jordan": {
+        "name": "Jordan",
+        "id": 30,
+        "data": "company"
+    },
+    "Czechia": {
+        "name": "Czechia",
+        "id": 31,
+        "data": "company"
+    },
+    "Belgium": {
+        "name": "Belgium",
+        "id": 32,
+        "data": "company"
+    },
+    "China": {
+        "name": "China",
+        "id": 33,
+        "data": "company"
+    },
+    "Denmark": {
+        "name": "Denmark",
+        "id": 34,
+        "data": "company"
+    },
+    "Japan": {
+        "name": "Japan",
+        "id": 35,
+        "data": "company"
+    },
+    "Hungary": {
+        "name": "Hungary",
+        "id": 36,
+        "data": "company"
+    },
+    "Sweden": {
+        "name": "Sweden",
+        "id": 37,
+        "data": "company"
+    }
+}
