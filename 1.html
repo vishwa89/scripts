@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Input</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
+  <script>
+    function handleSearch() {
+      var userInput = document.getElementById("userInput").value;
+    
+convertToPhoneKeypadNumber(userInput);
+}
+
+function convertToPhoneKeypadNumber(value) {
+  // Define the mapping of characters to keypad numbers
+  const keypadMapping = {
+    A: 2, B: 2, C: 2,
+    D: 3, E: 3, F: 3,
+    G: 4, H: 4, I: 4,
+    J: 5, K: 5, L: 5,
+    M: 6, N: 6, O: 6,
+    P: 7, Q: 7, R: 7, S: 7,
+    T: 8, U: 8, V: 8,
+    W: 9, X: 9, Y: 9, Z: 9
+  };
+
+  // Convert the value to uppercase
+  value = value.toUpperCase();
+
+  // Initialize the converted value
+  let convertedValue = '';
+
+  // Iterate over the characters in the value
+  for (let i = 0; i < value.length; i++) {
+    const char = value[i];
+    
+    // Check if the character is in the mapping
+    if (keypadMapping.hasOwnProperty(char)) {
+      // Append the keypad number to the converted value
+      convertedValue += keypadMapping[char];
+    } else {
+      // Append the character as is if it is not in the mapping
+      convertedValue += char;
+    }
+  }
+
+
+  fetch("test-new.csv")
+  .then(response => response.text())
+  .then(csvData => {
+    console.log("CSV Contents: " + csvData);
+    // Your code to process the CSV contents goes here
+  })
+  .catch(error => console.error("Error:", error));
+
+ searchNumberInCSV(convertedValue, "test-new.csv")
+}
+
+
+
+function searchNumberInCSV(inputNumber, csvData) {
+
+
+
+  // Parse the CSV data using PapaParse
+  const parsedData = Papa.parse(csvData, { header: true });
+
+
+   console.log(parsedData);
+
+  // Retrieve the column containing the numbers
+  const numberColumn = parsedData.data.map(row => row.Number);
+
+  searchNumberInCSV
+  console.log(numberColumn);
+
+  // Add prefixes to the input number based on conditions
+  let numbersToSearch = [];
+  if (inputNumber.length === 5) {
+    numbersToSearch.push("1800" + inputNumber);
+  } else if (inputNumber.length === 6) {
+    numbersToSearch.push("13" + inputNumber);
+  } else if (inputNumber.length === 7) {
+    numbersToSearch.push("1300" + inputNumber);
+  }
+  else{
+console.log(inputNumber);
+    numbersToSearch.push("1800" + inputNumber);
+          numbersToSearch.push("13" + inputNumber);
+          numbersToSearch.push("1300" + inputNumber);
+  }
+  
+  // Search for the numbers in the column
+  const foundIndex = numberColumn.findIndex(number => numbersToSearch.includes(number));
+
+ /* If number not found, call the alternative numbers function
+  if (foundIndex === -1) {
+    const alternativeNumber = findAlternativeNumber(inputNumber);
+    return alternativeNumber;
+  }
+*/
+  // Return the index of the found number
+  return foundIndex;
+}
+
+
+  </script>
+</head>
+<body>
+  <h1>User Input</h1>
+  <label for="userInput">Input:</label>
+  <input type="text" id="userInput" name="userInput" placeholder="Enter your input"><br><br>
+  <button onclick="handleSearch()">Search</button>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
